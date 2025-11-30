@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jasnoor Mann — Front-End Web Developer</title>
+
+  <!-- SEO meta -->
+  <meta name="description" content="Front-end web developer building responsive, accessible websites using HTML, CSS, and JavaScript. Explore my portfolio and projects." />
+  <link rel="canonical" href="https://jasnoormann.ca/" />
+  <meta property="og:title" content="Jasnoor Mann — Front-End Web Developer" />
+  <meta property="og:description" content="Front-end developer specializing in clean design, responsive layouts, and interactive experiences." />
+  <meta property="og:url" content="https://jasnoormann.ca/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://jasnoormann.ca/images/og-cover.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Jasnoor Mann — Front-End Web Developer" />
+  <meta name="twitter:description" content="Front-end developer specializing in responsive, performance-driven design." />
+  <meta name="twitter:image" content="https://jasnoormann.ca/images/og-cover.png" />
+
+  <!-- Favicon -->
+  <link
+    rel="icon"
+    type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='12' fill='%23171a20' stroke='%23363b46' stroke-width='3'/><text x='32' y='60' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-weight='900' font-size='45' fill='%235aa7ff'>J</text><text x='68' y='60' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-weight='900' font-size='45' fill='%23e7eaf0'>M</text></svg>"
+  />
+
+  <!-- Styles & scripts -->
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <script src="./script.js" defer></script>
+</head>
+
+<body class="home">
+  <!-- Preloader -->
+  <div id="preloader" class="preloader" aria-hidden="true">
+    <div class="preloader__inner">
+      <div class="progress" role="progressbar" aria-valuemin="0" aria-valuenow="0" aria-label="Page loading progress">
+        <span class="progress__bar" id="progressBar"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sparkles background -->
+  <div id="sparkles"></div>
+
+  <!-- Header -->
+  <header class="header header--home">
+    <div class="header__inner">
+      <div class="logo js-reveal is-hidden" data-delay="0.1">
+        <a href="#" class="logo__link" aria-label="Go to home page">
+          <span class="logo__initials">
+            <span class="logo__accent">J</span>M
+          </span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero section -->
+  <main class="hero" role="main">
+    <div class="hero__inner">
+      <h1 class="hero__title js-reveal is-hidden" data-delay="0.2">Jasnoor Mann</h1>
+      <p class="hero__subtitle js-reveal is-hidden" data-delay="0.4">Front-End Web Developer</p>
+      <div class="hero__divider js-reveal is-hidden" data-delay="0.5"></div>
+      <nav class="hero__actions js-reveal is-hidden" data-delay="0.6" aria-label="Primary">
+        <a class="btn btn--ghost" href="./projects.html">Projects</a>
+        <a class="btn btn--ghost" href="./about.html">About</a>
+        <a class="btn btn--ghost" href="./contact.html">Contact</a>
+      </nav>
+    </div>
+  </main>
+
+  <!-- Anchors -->
+  <section id="projects" class="anchor"></section>
+  <section id="about" class="anchor"></section>
+  <section id="contact" class="anchor"></section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__socials">
+      <a href="https://github.com/JasnoorM17" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile" class="footer__link">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/jasnoor-mann-707109336/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile" class="footer__link">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a href="mailto:jasnoorm365@gmail.com" aria-label="Send an email to Jasnoor Mann" class="footer__link">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </div>
+    <p class="footer__copyright">
+      &copy; <span id="year"></span> Jasnoor Mann.
+    </p>
+  </footer>
+</body>
+</html>

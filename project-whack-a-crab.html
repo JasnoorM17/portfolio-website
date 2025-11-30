@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Whack A Crab — Project Detail | Jasnoor Mann</title>
+
+  <!-- SEO meta -->
+  <meta name="description" content="Whack A Crab is a fun JavaScript browser game created by Jasnoor Mann. Click the crabs to score points in this fast-paced interactive project." />
+  <link rel="canonical" href="https://jasnoormann.ca/project-whack-a-crab" />
+  <meta property="og:title" content="Whack A Crab — JavaScript Game by Jasnoor Mann" />
+  <meta property="og:description" content="A lighthearted Whack-a-Mole inspired browser game built using HTML, CSS, and JavaScript." />
+  <meta property="og:url" content="https://jasnoormann.ca/project-whack-a-crab" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://jasnoormann.ca/images/crab-og.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Whack A Crab — JavaScript Game by Jasnoor Mann" />
+  <meta name="twitter:description" content="Play Whack A Crab, a JavaScript browser game created by Jasnoor Mann featuring smooth animations and responsive design." />
+  <meta name="twitter:image" content="https://jasnoormann.ca/images/crab-og.png" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='12' fill='%23171a20' stroke='%23363b46' stroke-width='3'/><text x='32' y='60' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-weight='900' font-size='45' fill='%235aa7ff'>J</text><text x='68' y='60' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-weight='900' font-size='45' fill='%23e7eaf0'>M</text></svg>" />
+
+  <!-- Styles & scripts -->
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+  <script src="./script.js" defer></script>
+</head>
+
+<body>
+  <!-- Preloader -->
+  <div id="preloader" class="preloader" aria-hidden="true">
+    <div class="preloader__inner">
+      <div class="progress" role="progressbar" aria-valuemin="0" aria-valuenow="0" aria-label="Page loading progress">
+        <span class="progress__bar" id="progressBar"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sparkles background -->
+  <div id="sparkles"></div>
+
+  <!-- Header -->
+  <header class="header page-header">
+    <div class="header__inner">
+      <div class="logo js-reveal is-hidden" data-delay="0.1">
+        <a href="./index.html" class="logo__link" aria-label="Go to home page">
+          <span class="logo__initials"><span class="logo__accent">J</span>M</span>
+        </a>
+      </div>
+
+      <!-- Navigation -->
+      <nav class="nav js-reveal is-hidden" data-delay="0.2" aria-label="Main Navigation">
+        <a class="nav__link" href="./projects.html">Projects</a>
+        <a class="nav__link" href="./about.html">About</a>
+        <a class="nav__link" href="./contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Project -->
+  <main class="page-container">
+    <!-- Project summary -->
+    <section class="pd-hero js-reveal is-hidden" data-delay="0.2">
+      <div class="pd-meta">
+        <h1 class="pd-title">Whack A Crab</h1>
+
+        <div class="pd-tags">
+          <span class="tag tag--small">HTML5</span>
+          <span class="tag tag--small">CSS3</span>
+          <span class="tag tag--small">JavaScript</span>
+        </div>
+
+        <div class="pd-actions">
+          <a class="btn btn--primary" href="/games/index.html" target="_blank" rel="noopener">Try Game</a>
+        </div>
+      </div>
+
+      <!-- Media -->
+      <figure class="pd-media">
+        <img src="images/crab gif.gif" alt="Whack A Crab gameplay preview">
+      </figure>
+    </section>
+
+    <!-- About -->
+    <section class="pd-about js-reveal is-hidden" data-delay="0.25">
+      <div class="pd-about__inner">
+        <h2 class="pd-h2">About the Game</h2>
+        <p class="pd-sub">
+          Whack A Crab is a lighthearted browser game inspired by the classic “Whack-a-Mole.” Players click fast-moving crabs as they pop up to score points before the timer ends. It’s built with vanilla JavaScript for logic (timers, score tracking, event handling) and CSS for animations and responsiveness.
+        </p>
+      </div>
+    </section>
+
+    <!-- Reflections & takeaways -->
+    <section class="pd-tabs js-reveal is-hidden" data-delay="0.3">
+      <div class="tabs" role="tablist" aria-label="Project panels">
+        <button class="tab-btn is-active" role="tab" aria-selected="true" aria-controls="tab-reflections" id="tab-reflections-btn">Reflections</button>
+        <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-takeaways" id="tab-takeaways-btn">Key Takeaways</button>
+      </div>
+
+      <div class="tab-panels">
+        <!-- Reflections -->
+        <article id="tab-reflections" class="tab-panel" role="tabpanel" aria-labelledby="tab-reflections-btn">
+          <h2 class="pd-h2">Reflections</h2>
+
+          <h3 class="pd-h3">How did I feel?</h3>
+          <p class="pd-paragraph">
+            I’m proud of this being my first completed game project. It was fun to see my JavaScript knowledge come to life in a working, interactive way.
+          </p>
+
+          <h3 class="pd-h3">What did I learn?</h3>
+          <ul class="pd-list">
+            <li>Core JavaScript skills: timers, event listeners, and DOM manipulation for score/time updates.</li>
+            <li>How responsive feedback makes games feel satisfying — quick clicks, fast animations, smooth flow.</li>
+            <li>That small games benefit from organized functions and clear state management more than complex frameworks.</li>
+          </ul>
+        </article>
+
+        <!-- Key Takeaways -->
+        <article id="tab-takeaways" class="tab-panel is-hidden" role="tabpanel" aria-labelledby="tab-takeaways-btn">
+          <h2 class="pd-h2">Key Takeaways</h2>
+          <ul class="pd-list">
+            <li>Improved confidence working with vanilla JS and understanding browser event cycles.</li>
+            <li>Learned the importance of accessibility and feedback in interactive design.</li>
+            <li>Would improve hit detection and add progressive difficulty, sound effects, and local high scores.</li>
+            <li>Ensured the game is mobile-friendly and performs smoothly across devices.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__socials js-reveal is-hidden" data-delay="0.4">
+      <a href="https://github.com/JasnoorM17" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile" class="footer__link"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/jasnoor-mann-707109336/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile" class="footer__link"><i class="fab fa-linkedin-in"></i></a>
+      <a href="mailto:jasnoorm365@gmail.com" aria-label="Send an email to Jasnoor Mann" class="footer__link"><i class="fas fa-envelope"></i></a>
+    </div>
+    <p class="footer__copyright js-reveal is-hidden" data-delay="0.5">
+      &copy; <span id="year"></span> Jasnoor Mann.
+    </p>
+  </footer>
+</body>
+</html>

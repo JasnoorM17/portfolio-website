@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mindset — Project Detail | Jasnoor Mann</title>
+
+  <!-- basic SEO -->
+  <meta name="description" content="Mindset — a clean, fast WordPress site by Jasnoor Mann using core templates, custom parts, and lightweight styling." />
+  <link rel="canonical" href="https://jasnoormann.ca/project-mindset" />
+
+  <!-- social share -->
+  <meta property="og:title" content="Mindset — WordPress Project by Jasnoor Mann" />
+  <meta property="og:description" content="A readable, fast WordPress build using core templates + custom parts." />
+  <meta property="og:url" content="https://jasnoormann.ca/project-mindset" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://jasnoormann.ca/images/mindset-og.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Mindset — WordPress Project by Jasnoor Mann" />
+  <meta name="twitter:description" content="A readable, fast WordPress build using core templates + custom parts." />
+  <meta name="twitter:image" content="https://jasnoormann.ca/images/mindset-og.png" />
+
+  <!-- favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='12' fill='%23171a20' stroke='%23363b46' stroke-width='3'/><text x='32' y='60' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-weight='900' font-size='45' fill='%235aa7ff'>J</text><text x='68' y='60' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-weight='900' font-size='45' fill='%23e7eaf0'>M</text></svg>" />
+
+  <!-- styles & scripts -->
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+  <script src="./script.js" defer></script>
+
+  <!-- small slider styles (scoped to this page) -->
+  <style>
+    .pd-media { position: relative; overflow: hidden; }
+    .pd-viewport { position: relative; width: 100%; aspect-ratio: 16/9; background: #0f1217; }
+    .pd-frame { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity .3s ease; }
+    .pd-frame.is-active { opacity: 1; }
+    .pd-controls { position: absolute; inset: 0; display: flex; align-items: center; justify-content: space-between; padding: 0 .5rem; pointer-events: none; }
+    .pd-arrow { pointer-events: all; width: 44px; height: 44px; border-radius: 999px; border: 1px solid rgba(255,255,255,.14); background: rgba(0,0,0,.35); color: #fff; display: grid; place-items: center; cursor: pointer; backdrop-filter: blur(6px); transition: transform .15s ease, border-color .2s ease, background .2s ease; }
+    .pd-arrow:hover { transform: translateY(-2px); border-color: var(--btn-ring); background: rgba(90,167,255,.18); }
+    .pd-dots { position: absolute; left: 50%; bottom: .6rem; transform: translateX(-50%); display: flex; gap: .4rem; pointer-events: all; }
+    .pd-dot { width: 8px; height: 8px; border-radius: 999px; border: 1px solid rgba(255,255,255,.6); background: rgba(255,255,255,.2); cursor: pointer; transition: transform .15s ease, background .2s ease, border-color .2s ease; }
+    .pd-dot.is-active { background: var(--blue); border-color: var(--blue-light); transform: scale(1.1); }
+  </style>
+</head>
+<body>
+  <!-- preloader -->
+  <div id="preloader" class="preloader" aria-hidden="true">
+    <div class="preloader__inner">
+      <div class="progress" role="progressbar" aria-valuemin="0" aria-valuenow="0" aria-label="Page loading progress">
+        <span class="progress__bar" id="progressBar"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- sparkles -->
+  <div id="sparkles"></div>
+
+  <!-- header -->
+  <header class="header page-header">
+    <div class="header__inner">
+      <div class="logo js-reveal is-hidden" data-delay="0.1">
+        <a href="./index.html" class="logo__link" aria-label="Go to home page">
+          <span class="logo__initials"><span class="logo__accent">J</span>M</span>
+        </a>
+      </div>
+
+      <!-- nav -->
+      <nav class="nav js-reveal is-hidden" data-delay="0.2" aria-label="Main Navigation">
+        <a class="nav__link" href="./projects.html">Projects</a>
+        <a class="nav__link" href="./about.html">About</a>
+        <a class="nav__link" href="./contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- main -->
+  <main class="page-container">
+    <!-- summary -->
+    <section class="pd-hero js-reveal is-hidden" data-delay="0.2">
+      <div class="pd-meta">
+        <h1 class="pd-title">Mindset</h1>
+
+        <div class="pd-tags">
+          <span class="tag tag--small">WordPress</span>
+          <span class="tag tag--small">PHP</span>
+        </div>
+
+        <div class="pd-actions">
+          <a class="btn btn--primary" href="https://jasnoormann.ca/mindset/" target="_blank" rel="noopener">Live Site</a>
+          <a class="btn btn--ghost" href="https://github.com/JasnoorM17/mindset-theme" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+
+      <!-- image slider -->
+      <figure class="pd-media" id="mindsetSlider" aria-label="Mindset gallery">
+        <div class="pd-viewport">
+          <img class="pd-frame is-active" src="images/m1.png" alt="Mindset homepage" />
+          <img class="pd-frame" src="images/m2.png" alt="Posts grid" />
+          <img class="pd-frame" src="images/m3.png" alt="Single post" />
+        </div>
+
+        <div class="pd-controls">
+          <button class="pd-arrow" data-prev aria-label="Previous image"><i class="fa-solid fa-chevron-left"></i></button>
+          <button class="pd-arrow" data-next aria-label="Next image"><i class="fa-solid fa-chevron-right"></i></button>
+          <div class="pd-dots" role="tablist" aria-label="Choose slide">
+            <button class="pd-dot is-active" data-goto="0" role="tab" aria-selected="true"></button>
+            <button class="pd-dot" data-goto="1" role="tab" aria-selected="false"></button>
+            <button class="pd-dot" data-goto="2" role="tab" aria-selected="false"></button>
+          </div>
+        </div>
+      </figure>
+    </section>
+
+    <!-- about -->
+    <section class="pd-about js-reveal is-hidden" data-delay="0.25">
+      <div class="pd-about__inner">
+        <h2 class="pd-h2">About the Site</h2>
+        <p class="pd-sub">
+          Mindset focuses on clear structure and readable typography. I used WordPress templates, parts, and simple customizations to keep the site fast and easy to maintain.
+        </p>
+      </div>
+    </section>
+
+    <!-- tabs -->
+    <section class="pd-tabs js-reveal is-hidden" data-delay="0.3">
+      <div class="tabs" role="tablist" aria-label="Project panels">
+        <button class="tab-btn is-active" role="tab" aria-selected="true" aria-controls="tab-reflections" id="tab-reflections-btn">Reflections</button>
+        <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-takeaways" id="tab-takeaways-btn">Key Takeaways</button>
+      </div>
+
+      <div class="tab-panels">
+        <article id="tab-reflections" class="tab-panel" role="tabpanel" aria-labelledby="tab-reflections-btn">
+          <h2 class="pd-h2">Reflections</h2>
+
+          <h3 class="pd-h3">How did I feel?</h3>
+          <p class="pd-paragraph">
+            Overall I’m happy with this site since it worked the way I expected and matched the look I wanted.
+          </p>
+
+          <h3 class="pd-h3">What did I learn?</h3>
+          <ul class="pd-list">
+            <li>How to add and modify custom parts in WordPress to control layout and content sections.</li>
+            <li>How to use plugins like WPForms to collect submissions with a simple setup and consistent styling.</li>
+            <li>How to navigate WordPress and get the site working in both local and live environments.</li>
+            <li>Using WP Migrate to sync content and settings between local and live.</li>
+          </ul>
+        </article>
+
+        <article id="tab-takeaways" class="tab-panel is-hidden" role="tabpanel" aria-labelledby="tab-takeaways-btn">
+          <h2 class="pd-h2">Key Takeaways</h2>
+          <ul class="pd-list">
+            <li>Start with core templates, then add custom parts where more control is needed.</li>
+            <li>Plan media sizes and alt text early for performance and accessibility.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="footer__socials js-reveal is-hidden" data-delay="0.4">
+      <a href="https://github.com/JasnoorM17" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile" class="footer__link"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/jasnoor-mann-707109336/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile" class="footer__link"><i class="fab fa-linkedin-in"></i></a>
+      <a href="mailto:jasnoorm365@gmail.com" aria-label="Send an email to Jasnoor Mann" class="footer__link"><i class="fas fa-envelope"></i></a>
+    </div>
+    <p class="footer__copyright js-reveal is-hidden" data-delay="0.5">
+      &copy; <span id="year"></span> Jasnoor Mann.
+    </p>
+  </footer>
+
+  <!-- small slider logic (scoped) -->
+  <script>
+    (function() {
+      const root = document.getElementById('mindsetSlider');
+      if (!root) return;
+
+      const frames = Array.from(root.querySelectorAll('.pd-frame'));
+      const dots   = Array.from(root.querySelectorAll('.pd-dot'));
+      const prev   = root.querySelector('[data-prev]');
+      const next   = root.querySelector('[data-next]');
+      let i = 0;
+
+      function show(idx) {
+        i = (idx + frames.length) % frames.length;
+        frames.forEach((f, n) => f.classList.toggle('is-active', n === i));
+        dots.forEach((d, n) => {
+          d.classList.toggle('is-active', n === i);
+          d.setAttribute('aria-selected', n === i ? 'true' : 'false');
+        });
+      }
+
+      prev && prev.addEventListener('click', () => show(i - 1));
+      next && next.addEventListener('click', () => show(i + 1));
+      dots.forEach(d => d.addEventListener('click', () => show(parseInt(d.dataset.goto, 10))));
+      frames.forEach(img => { if (img.complete === false) { const t = new Image(); t.src = img.src; } });
+
+      show(0);
+    })();
+  </script>
+</body>
+</html>

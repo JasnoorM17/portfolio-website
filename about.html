@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Jasnoor Mann</title>
+
+  <!-- SEO meta -->
+  <meta name="description" content="Front-end web developer focused on clean, accessible, and performance-driven websites. Learn more about Jasnoor Mann." />
+  <link rel="canonical" href="https://jasnoormann.ca/about" />
+  <meta property="og:title" content="About — Jasnoor Mann" />
+  <meta property="og:description" content="Front-end developer focused on creating accessible and performant websites." />
+  <meta property="og:url" content="https://jasnoormann.ca/about" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://jasnoormann.ca/images/about-og.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="About — Jasnoor Mann" />
+  <meta name="twitter:description" content="Front-end developer focused on creating accessible and performant websites." />
+  <meta name="twitter:image" content="https://jasnoormann.ca/images/about-og.png" />
+
+  <!-- Favicon -->
+  <link
+    rel="icon"
+    type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='12' fill='%23171a20' stroke='%23363b46' stroke-width='3'/><text x='32' y='60' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-weight='900' font-size='45' fill='%235aa7ff'>J</text><text x='68' y='60' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-weight='900' font-size='45' fill='%23e7eaf0'>M</text></svg>"
+  />
+
+  <!-- Styles & scripts -->
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <script src="./script.js" defer></script>
+</head>
+
+<body>
+  <!-- Preloader -->
+  <div id="preloader" class="preloader" aria-hidden="true">
+    <div class="preloader__inner">
+      <div class="progress" role="progressbar" aria-valuemin="0" aria-valuenow="0" aria-label="Page loading progress">
+        <span class="progress__bar" id="progressBar"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sparkles background -->
+  <div id="sparkles"></div>
+
+  <!-- Header -->
+  <header class="header page-header">
+    <div class="header__inner">
+      <div class="logo js-reveal is-hidden" data-delay="0.1">
+        <a href="./index.html" class="logo__link" aria-label="Go to home page">
+          <span class="logo__initials"><span class="logo__accent">J</span>M</span>
+        </a>
+      </div>
+
+      <!-- Nav -->
+      <nav class="nav js-reveal is-hidden" data-delay="0.2" aria-label="Main Navigation">
+        <a class="nav__link" href="./projects.html">Projects</a>
+        <a class="nav__link nav__link--active" href="./about.html">About</a>
+        <a class="nav__link" href="./contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Content -->
+  <main class="page-container">
+    <section class="about-section">
+      <div class="about-card js-reveal is-hidden" data-delay="0.3">
+        <h2 class="about-card__title">About Me</h2>
+        <p class="about-card__lead">
+          Hi, I'm Jasnoor! I'm a Front-End Developer with a passion for creating intuitive, modern websites that are both visually appealing and highly functional. 
+          I focus on building fast, accessible, and user-friendly websites that deliver great experiences across all devices.
+        </p>
+
+        <div class="about-grid js-reveal is-hidden" data-delay="0.4">
+          <div class="about-block">
+            <h3 class="about-block__title">What Got Me Into Coding</h3>
+            <p class="about-block__text">
+              After high school, I first got into Information Technology but quickly found it wasn’t the right fit. 
+              I realized I enjoyed the challenge of building things, and that curiosity led me to web development. 
+              I joined BCIT’s Front-End Web Developer program — an incredible journey that helped me grow as both a designer and developer.
+            </p>
+          </div>
+
+          <div class="about-block">
+            <h3 class="about-block__title">What I'm Passionate About</h3>
+            <p class="about-block__text">
+              I'm passionate about crafting websites that feel intuitive, fast, and modern. 
+              I focus on accessibility, clean interfaces, and smooth performance, ensuring every site feels natural to use while maintaining technical precision.
+            </p>
+          </div>
+
+          <div class="about-block">
+            <h3 class="about-block__title">Beyond Coding</h3>
+            <p class="about-block__text">
+              Outside of development, I love spending time with friends, exploring new restaurants, and playing sports or video games — 
+              it’s a great balance between creativity, teamwork, and fun.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tech stack -->
+      <div class="stack-card js-reveal is-hidden" data-delay="0.5">
+        <div class="stack-card__header">
+          <h2 class="stack-card__title">My Tech Stack</h2>
+          <div class="stack-filters" role="tablist" aria-label="Filter by category">
+            <button class="stack-filter is-active" data-filter="all" aria-selected="true">All</button>
+            <button class="stack-filter" data-filter="development" aria-selected="false">Development</button>
+            <button class="stack-filter" data-filter="design" aria-selected="false">Design</button>
+          </div>
+        </div>
+
+        <div class="stack-tags">
+          <!-- Development -->
+          <span class="tag" data-group="development">HTML5</span>
+          <span class="tag" data-group="development">CSS3</span>
+          <span class="tag" data-group="development">JavaScript</span>
+          <span class="tag" data-group="development">PHP</span>
+          <span class="tag" data-group="development">WordPress</span>
+          <span class="tag" data-group="development">WooCommerce</span>
+          <span class="tag" data-group="development">Shopify</span>
+          <span class="tag" data-group="development">React</span>
+          <span class="tag" data-group="development">SASS</span>
+          <span class="tag" data-group="development">Tailwind</span>
+          <span class="tag" data-group="development">MySQL</span>
+          <span class="tag" data-group="development">GitHub</span>
+
+          <!-- Design -->
+          <span class="tag" data-group="design">Adobe Illustrator</span>
+          <span class="tag" data-group="design">Adobe Photoshop</span>
+          <span class="tag" data-group="design">Adobe XD</span>
+          <span class="tag" data-group="design">Figma</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__socials js-reveal is-hidden" data-delay="0.6">
+      <a href="https://github.com/JasnoorM17" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile" class="footer__link">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/jasnoor-mann-707109336/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile" class="footer__link">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a href="mailto:jasnoorm365@gmail.com" aria-label="Send an email to Jasnoor Mann" class="footer__link">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </div>
+    <p class="footer__copyright js-reveal is-hidden" data-delay="0.7">
+      &copy; <span id="year"></span> Jasnoor Mann.
+    </p>
+  </footer>
+</body>
+</html>

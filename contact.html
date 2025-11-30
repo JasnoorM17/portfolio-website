@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Jasnoor Mann</title>
+
+  <!-- SEO meta -->
+  <meta name="description" content="Get in touch with Jasnoor Mann for collaborations, front-end web development projects, or opportunities." />
+  <link rel="canonical" href="https://jasnoormann.ca/contact" />
+  <meta property="og:title" content="Contact — Jasnoor Mann" />
+  <meta property="og:description" content="Reach out to Jasnoor Mann for project inquiries, collaborations, or web development opportunities." />
+  <meta property="og:url" content="https://jasnoormann.ca/contact" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://jasnoormann.ca/images/contact-og.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Contact — Jasnoor Mann" />
+  <meta name="twitter:description" content="Get in touch with Jasnoor Mann for front-end web development collaborations or opportunities." />
+  <meta name="twitter:image" content="https://jasnoormann.ca/images/contact-og.png" />
+
+  <!-- Favicon -->
+  <link
+    rel="icon"
+    type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='12' fill='%23171a20' stroke='%23363b46' stroke-width='3'/><text x='32' y='60' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-weight='900' font-size='45' fill='%235aa7ff'>J</text><text x='68' y='60' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-weight='900' font-size='45' fill='%23e7eaf0'>M</text></svg>"
+  />
+
+  <!-- Styles & scripts -->
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <script src="./script.js" defer></script>
+</head>
+
+<body>
+  <!-- Preloader -->
+  <div id="preloader" class="preloader" aria-hidden="true">
+    <div class="preloader__inner">
+      <div class="progress" role="progressbar" aria-valuemin="0" aria-valuenow="0" aria-label="Page loading progress">
+        <span class="progress__bar" id="progressBar"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sparkles background -->
+  <div id="sparkles"></div>
+
+  <!-- Header -->
+  <header class="header page-header">
+    <div class="header__inner">
+      <div class="logo js-reveal is-hidden" data-delay="0.1">
+        <a href="./index.html" class="logo__link" aria-label="Go to home page">
+          <span class="logo__initials"><span class="logo__accent">J</span>M</span>
+        </a>
+      </div>
+
+      <!-- Nav -->
+      <nav class="nav js-reveal is-hidden" data-delay="0.2" aria-label="Main Navigation">
+        <a class="nav__link" href="./projects.html">Projects</a>
+        <a class="nav__link" href="./about.html">About</a>
+        <a class="nav__link nav__link--active" href="./contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Contact section -->
+  <main class="page-container">
+    <section id="contact" class="contact-section">
+      <div class="contact-card js-reveal is-hidden" data-delay="0.3">
+        <h2 class="contact-card__title">Connect with Me</h2>
+        <p class="contact-card__description">
+          I'm always excited to discuss new opportunities, collaborate on projects, or chat about front-end development. 
+          Feel free to reach out through LinkedIn or send me an email directly.
+        </p>
+
+        <!-- Social links -->
+        <div class="contact-card__socials js-reveal is-hidden" data-delay="0.4">
+          <a href="https://www.linkedin.com/in/jasnoor-mann-707109336/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile" class="social-icon">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/JasnoorM17" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile" class="social-icon">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+
+        <!-- Email -->
+        <div class="contact-card__email-group js-reveal is-hidden" data-delay="0.5">
+          <p class="contact-card__email">
+            <a href="mailto:jasnoorm365@gmail.com" class="contact-card__email-link">jasnoorm365@gmail.com</a>
+          </p>
+          <button id="copyEmailBtn" class="btn btn--primary btn--copy" data-email="jasnoorm365@gmail.com">
+            <i class="fas fa-copy"></i> Copy Email
+          </button>
+        </div>
+
+        <div id="copy-message" class="copy-message" aria-live="polite"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__socials js-reveal is-hidden" data-delay="0.6">
+      <a href="https://github.com/JasnoorM17" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile" class="footer__link">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/jasnoor-mann-707109336/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile" class="footer__link">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a href="mailto:jasnoorm365@gmail.com" aria-label="Send an email to Jasnoor Mann" class="footer__link">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </div>
+    <p class="footer__copyright js-reveal is-hidden" data-delay="0.7">
+      &copy; <span id="year"></span> Jasnoor Mann.
+    </p>
+  </footer>
+</body>
+</html>

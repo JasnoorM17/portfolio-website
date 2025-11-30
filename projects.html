@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Projects — Jasnoor Mann</title>
+
+    <!-- SEO meta -->
+    <meta name="description" content="A collection of front-end development projects by Jasnoor Mann, built using HTML, CSS, JavaScript, and WordPress." />
+    <link rel="canonical" href="https://jasnoormann.ca/projects" />
+    <meta property="og:title" content="Projects — Jasnoor Mann" />
+    <meta property="og:description" content="Explore web development projects by Jasnoor Mann featuring responsive design and interactive features." />
+    <meta property="og:url" content="https://jasnoormann.ca/projects" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://jasnoormann.ca/images/projects-og.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Projects — Jasnoor Mann" />
+    <meta name="twitter:description" content="Explore web development projects by Jasnoor Mann including responsive websites and interactive builds." />
+    <meta name="twitter:image" content="https://jasnoormann.ca/images/projects-og.png" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='12' fill='%23171a20' stroke='%23363b46' stroke-width='3'/><text x='32' y='60' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-weight='900' font-size='45' fill='%235aa7ff'>J</text><text x='68' y='60' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-weight='900' font-size='45' fill='%23e7eaf0'>M</text></svg>" />
+
+    <!-- Styles & scripts -->
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <script src="./script.js" defer></script>
+  </head>
+
+  <body>
+    <!-- Preloader -->
+    <div id="preloader" class="preloader" aria-hidden="true">
+      <div class="preloader__inner">
+        <div class="progress" role="progressbar" aria-valuemin="0" aria-valuenow="0" aria-label="Page loading progress">
+          <span class="progress__bar" id="progressBar"></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sparkles background -->
+    <div id="sparkles"></div>
+
+    <!-- Header -->
+    <header class="header page-header">
+      <div class="header__inner">
+        <div class="logo js-reveal is-hidden" data-delay="0.1">
+          <a href="./index.html" class="logo__link" aria-label="Go to home page">
+            <span class="logo__initials"><span class="logo__accent">J</span>M</span>
+          </a>
+        </div>
+
+        <!-- Main navigation -->
+        <nav class="nav js-reveal is-hidden" data-delay="0.2" aria-label="Main Navigation">
+          <a class="nav__link nav__link--active" href="./projects.html">Projects</a>
+          <a class="nav__link" href="./about.html">About</a>
+          <a class="nav__link" href="./contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Projects -->
+    <main class="page-container">
+      <section class="projects-section">
+        <div class="projects-header js-reveal is-hidden" data-delay="0.25">
+          <h1 class="projects-title">Projects</h1>
+        </div>
+
+        <div class="project-grid">
+          <!-- Project 1 -->
+          <article class="project-card js-reveal is-hidden" data-delay="0.3">
+            <a class="project-media" href="./project-whack-a-crab.html" aria-label="Open Whack A Crab project">
+              <img src="images/crab.png" alt="Whack A Crab preview"/>
+            </a>
+            <div class="project-body">
+              <h3 class="project-title">Whack A Crab</h3>
+              <p class="project-desc">Whack the crabs to earn points!</p>
+              <div class="project-tags">
+                <span class="tag tag--small">HTML5</span>
+                <span class="tag tag--small">CSS3</span>
+                <span class="tag tag--small">JavaScript</span>
+              </div>
+              <div class="project-actions">
+                <a class="btn btn--primary" href="./project-whack-a-crab.html">View Project</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card js-reveal is-hidden" data-delay="0.35">
+            <a class="project-media" href="./project-mindset.html" aria-label="Open Mindset Website project">
+              <img src="images/mindset.png" alt="Mindset Website preview"/>
+            </a>
+            <div class="project-body">
+              <h3 class="project-title">Mindset Website</h3>
+              <p class="project-desc">A WordPress website that utilizes different features to display posts, images, and more.</p>
+              <div class="project-tags">
+                <span class="tag tag--small">WordPress</span>
+                <span class="tag tag--small">PHP</span>
+              </div>
+              <div class="project-actions">
+                <a class="btn btn--primary" href="./project-mindset.html">View Project</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card js-reveal is-hidden" data-delay="0.4">
+            <a class="project-media" href="./project-portfolio.html" aria-label="Open Portfolio Website project">
+              <img src="images/port.png" alt="Portfolio Website preview"/>
+            </a>
+            <div class="project-body">
+              <h3 class="project-title">Portfolio Website</h3>
+              <p class="project-desc">My personal portfolio website showcasing my work, projects, and skills.</p>
+              <div class="project-tags">
+                <span class="tag tag--small">HTML5</span>
+                <span class="tag tag--small">CSS3</span>
+                <span class="tag tag--small">JavaScript</span>
+              </div>
+              <div class="project-actions">
+                <a class="btn btn--primary" href="./project-portfolio.html">View Project</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer__socials js-reveal is-hidden" data-delay="0.55">
+        <a href="https://github.com/JasnoorM17" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile" class="footer__link">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/jasnoor-mann-707109336/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile" class="footer__link">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="mailto:jasnoorm365@gmail.com" aria-label="Send an email to Jasnoor Mann" class="footer__link">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+      <p class="footer__copyright js-reveal is-hidden" data-delay="0.6">
+        &copy; <span id="year"></span> Jasnoor Mann.
+      </p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio Website — Project Detail | Jasnoor Mann</title>
+
+  <!-- basic SEO -->
+  <meta name="description" content="Portfolio Website — a fast, mobile-first personal site by Jasnoor Mann with clean components and subtle motion." />
+  <link rel="canonical" href="https://jasnoormann.ca/project-portfolio" />
+
+  <!-- social share -->
+  <meta property="og:title" content="Portfolio Website — Project by Jasnoor Mann" />
+  <meta property="og:description" content="A mobile-first portfolio built with clean components, accessibility, and subtle motion." />
+  <meta property="og:url" content="https://jasnoormann.ca/project-portfolio" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://jasnoormann.ca/images/portfolio-og.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Portfolio Website — Project by Jasnoor Mann" />
+  <meta name="twitter:description" content="A mobile-first portfolio built with clean components, accessibility, and subtle motion." />
+  <meta name="twitter:image" content="https://jasnoormann.ca/images/portfolio-og.png" />
+
+  <!-- favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='12' fill='%23171a20' stroke='%23363b46' stroke-width='3'/><text x='32' y='60' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-weight='900' font-size='45' fill='%235aa7ff'>J</text><text x='68' y='60' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-weight='900' font-size='45' fill='%23e7eaf0'>M</text></svg>" />
+
+  <!-- styles & scripts -->
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <!-- Preloader -->
+  <div id="preloader" class="preloader" aria-hidden="true">
+    <div class="preloader__inner">
+      <div class="progress" role="progressbar" aria-valuemin="0" aria-valuenow="0" aria-label="Page loading progress">
+        <span class="progress__bar" id="progressBar"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Background sparkles -->
+  <div id="sparkles"></div>
+
+  <!-- Header -->
+  <header class="header page-header">
+    <div class="header__inner">
+      <div class="logo js-reveal is-hidden" data-delay="0.1">
+        <a href="./index.html" class="logo__link" aria-label="Go to home page">
+          <span class="logo__initials"><span class="logo__accent">J</span>M</span>
+        </a>
+      </div>
+
+      <!-- Main navigation -->
+      <nav class="nav js-reveal is-hidden" data-delay="0.2" aria-label="Main Navigation">
+        <a class="nav__link" href="./projects.html">Projects</a>
+        <a class="nav__link" href="./about.html">About</a>
+        <a class="nav__link" href="./contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main content -->
+  <main class="page-container">
+    <!-- Project summary -->
+    <section class="pd-hero js-reveal is-hidden" data-delay="0.2">
+      <div class="pd-meta">
+        <h1 class="pd-title">Portfolio Website</h1>
+        <p class="pd-sub">
+          My personal portfolio built with a mobile-first approach, clean components, and subtle motion for a smooth first impression.
+        </p>
+
+        <div class="pd-tags">
+          <span class="tag tag--small">HTML5</span>
+          <span class="tag tag--small">CSS3</span>
+          <span class="tag tag--small">JavaScript</span>
+        </div>
+
+        <div class="pd-actions">
+          <a class="btn btn--primary" href="https://jasnoormann.ca" target="_blank" rel="noopener">Live Site</a>
+          <a class="btn btn--ghost" href="#" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+
+      <!-- Project image -->
+      <figure class="pd-media">
+        <img src="images/port.png" alt="Portfolio website homepage" style="width:100%; border-radius:12px;"/>
+      </figure>
+    </section>
+
+    <!-- About section -->
+    <section class="pd-about js-reveal is-hidden" data-delay="0.25">
+      <div class="pd-about__inner">
+        <h2 class="pd-h2">About the Site</h2>
+        <p class="pd-sub">
+          The site balances visual flair and performance. I kept the layout modular, used semantic HTML, and layered enhancements like background sparkles & a loading bar on page click. Styles and scripts are split into dedicated files for easier maintenance and iteration.
+        </p>
+      </div>
+    </section>
+
+    <!-- Reflections & key takeaways -->
+    <section class="pd-tabs js-reveal is-hidden" data-delay="0.3">
+      <div class="tabs" role="tablist" aria-label="Project panels">
+        <button class="tab-btn is-active" role="tab" aria-selected="true" aria-controls="tab-reflections" id="tab-reflections-btn">Reflections</button>
+        <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-takeaways" id="tab-takeaways-btn">Key Takeaways</button>
+      </div>
+
+      <div class="tab-panels">
+        <!-- Reflections -->
+        <article id="tab-reflections" class="tab-panel" role="tabpanel" aria-labelledby="tab-reflections-btn">
+          <h2 class="pd-h2">Reflections</h2>
+
+          <h3 class="pd-h3">How did I feel?</h3>
+          <p class="pd-paragraph">
+            I felt proud of how cohesive and responsive the layout turned out. The mobile-first design process helped me visualize spacing and hierarchy before scaling up, and the subtle animations add personality without slowing things down.
+          </p>
+
+          <h3 class="pd-h3">What did I learn?</h3>
+          <ul class="pd-list">
+            <li>Mobile-first design simplifies scaling — starting small made desktop styling far more intentional.</li>
+            <li>Organizing reusable components like headers and cards saved time and kept consistency across pages.</li>
+            <li>Adding motion and spark effects is most effective when tied to purpose — not just visuals.</li>
+          </ul>
+        </article>
+
+        <!-- Key Takeaways -->
+        <article id="tab-takeaways" class="tab-panel is-hidden" role="tabpanel" aria-labelledby="tab-takeaways-btn">
+          <h2 class="pd-h2">Key Takeaways</h2>
+          <ul class="pd-list">
+            <li>Code structure and readability make future updates much smoother.</li>
+            <li>Progressive enhancement ensures performance and accessibility stay strong on all devices.</li>
+            <li>Maintaining a clean folder layout helps when adding new project pages later.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__socials js-reveal is-hidden" data-delay="0.4">
+      <a href="https://github.com/JasnoorM17" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile" class="footer__link"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/jasnoor-mann-707109336/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile" class="footer__link"><i class="fab fa-linkedin-in"></i></a>
+      <a href="mailto:jasnoorm365@gmail.com" aria-label="Send an email to Jasnoor Mann" class="footer__link"><i class="fas fa-envelope"></i></a>
+    </div>
+    <p class="footer__copyright js-reveal is-hidden" data-delay="0.5">
+      &copy; <span id="year"></span> Jasnoor Mann.
+    </p>
+  </footer>
+</body>
+</html>

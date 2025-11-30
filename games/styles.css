@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+body{
+    background-color: #FAD9A1;
+    font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1{
+    font-family: "Anton SC", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+}
+
+.counter{
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+}
+
+.container{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+.item{
+    width: 200px;
+    height: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.crab{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    transition: all 200ms ease;
+}
+
+.crab-hide{
+    bottom:10px;
+    width: 50px;
+}
+
+.crab-appear{
+    width: 200px;
+    bottom: 50px;
+}
+
+.sand-castle{
+    width: 160px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.hit-text{
+    color: black;
+    text-transform: uppercase;
+    font-size: 30px;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.crab img{
+    padding: 15px;
+}
